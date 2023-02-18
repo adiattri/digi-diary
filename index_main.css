@@ -1,5 +1,5 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
 }
 
 #SignInDiv {
@@ -36,16 +36,12 @@ body {
     width: 100%;
     margin: 6px 0px 6px 0px;
     padding: 6px;
-    border: 1px solid #000000;
+    border: none;
     cursor: pointer;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #1a73e8;
+    color: #ffffff;
     border-radius: 5px;
     outline: none;
     -webkit-tap-highlight-color: #ffffff;
 }
 
-#SignInDiv button:hover {
-    background-color: #000000;
-    color: #ffffff;
-}
