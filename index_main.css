@@ -54,3 +54,24 @@ body {
 #SignInDiv button:hover {
     background-color: #0a63d8;
 }
+#PleaseWaitDiv {
+    margin: 40px auto;
+    padding: 4px;
+    border: 8px solid #1a73e8;
+    border-radius: 50%;
+    border-top: 8px solid #ffffff;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: PleaseWaitDivSpin 2s linear infinite;
+    animation: PleaseWaitDivSpin 1s linear infinite;
+}
+  
+@-webkit-keyframes PleaseWaitDivSpin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes PleaseWaitDivSpin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
