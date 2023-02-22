@@ -55,6 +55,7 @@ body {
     background-color: #0a63d8;
 }
 #PleaseWaitDiv {
+    display: none;
     margin: 40px auto;
     padding: 4px;
     border: 8px solid #1a73e8;
