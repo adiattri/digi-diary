@@ -2,29 +2,17 @@ body {
     background-color: #272727;
 }
 
-#MainHeading {
+#DiaryLoginDiv {
+    margin: 0px auto;
+    max-width: 300px;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
     padding: 16px;
     text-align: center;
     color: #ffffff;
 }
-#SignInDiv {
-    border: 1px solid #000000;
-    border: none;
-    margin: 0px auto;
-    padding: 15px;
-    max-width: 300px;
-    border-radius: 5px;
-}
-#SignInDiv h4 {
-    color: #14a76c;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 6px 0px 6px 0px;
-    padding: 0px;
-    cursor: default;
-}
-#SignInDiv input {
+
+#DiaryPasswordInput,
+#DiarySetPasswordInput {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     box-sizing: border-box;
@@ -33,50 +21,9 @@ body {
     width: 100%;
     margin: 6px 0px 6px 0px;
     padding: 6px;
-    border: solid #ffffff;
-    border-width: 0px 0px 1px 0px;
-    outline: none;
-    background-color: #272727;
-    color: #14a76c;
-}
-
-#SignInDiv button {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    width: 100%;
-    margin: 6px 0px 6px 0px;
-    padding: 6px;
     border: none;
-    cursor: pointer;
-    background-color: #1a73e8;
-    color: #ffffff;
-    border-radius: 5px;
     outline: none;
-    -webkit-tap-highlight-color: #ffffff;
-}
-
-#SignInDiv button:hover {
-    background-color: #0a63d8;
-}
-#PleaseWaitDiv {
-    display: none;
-    margin: 40px auto;
-    padding: 4px;
-    border: 8px solid #1a73e8;
-    border-radius: 50%;
-    border-top: 8px solid #272727;
-    width: 40px;
-    height: 40px;
-    -webkit-animation: PleaseWaitDivSpin 2s linear infinite;
-    animation: PleaseWaitDivSpin 1s linear infinite;
-}
-  
-@-webkit-keyframes PleaseWaitDivSpin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-}
-  
-@keyframes PleaseWaitDivSpin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    background-color: #373737;
+    color: #ffffff;
+    border-radius: 4px;
 }
