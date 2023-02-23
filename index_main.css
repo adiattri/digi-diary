@@ -2,8 +2,15 @@ body {
     background-color: #272727;
 }
 
+button,
+input,
+h1,
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #DiaryLoginDiv {
-    margin: 0px auto;
+    margin: 100px auto 100px auto;
     max-width: 300px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 16px;
@@ -13,7 +20,7 @@ body {
 
 #DiaryPasswordInput,
 #DiarySetPasswordInput {
-    font-family: Arial, Helvetica, sans-serif;
+    display: block;
     font-size: 18px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -26,4 +33,23 @@ body {
     background-color: #373737;
     color: #ffffff;
     border-radius: 4px;
+}
+
+#DiarySetPasswordButton {
+    display: block;
+    font-size: 18px;
+    width: 100%;
+    margin: 6px 0px 6px 0px;
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: #373737;
+    color: #ffffff;
+    border-radius: 4px;
+    outline: none;
+    -webkit-tap-highlight-color: #373737;
+}
+
+#DiarySetPasswordButton:hover {
+    background-color: #474747;
 }
