@@ -1,5 +1,5 @@
 body {
-    background-color: #ffffff;
+    background-color: #272727;
 }
 
 #MainHeading {
@@ -7,15 +7,18 @@ body {
     margin: 0px;
     padding: 16px;
     text-align: center;
+    color: #ffffff;
 }
 #SignInDiv {
     border: 1px solid #000000;
+    border: none;
     margin: 0px auto;
     padding: 15px;
     max-width: 300px;
     border-radius: 5px;
 }
 #SignInDiv h4 {
+    color: #14a76c;
     font-family: Arial, Helvetica, sans-serif;
     margin: 6px 0px 6px 0px;
     padding: 0px;
@@ -23,17 +26,18 @@ body {
 }
 #SignInDiv input {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 100%;
     margin: 6px 0px 6px 0px;
     padding: 6px;
-    border: 1px solid #000000;
-    border-radius: 5px;
+    border: solid #ffffff;
+    border-width: 0px 0px 1px 0px;
     outline: none;
-    background-color: #ffffff;
+    background-color: #272727;
+    color: #14a76c;
 }
 
 #SignInDiv button {
@@ -60,7 +64,7 @@ body {
     padding: 4px;
     border: 8px solid #1a73e8;
     border-radius: 50%;
-    border-top: 8px solid #ffffff;
+    border-top: 8px solid #272727;
     width: 40px;
     height: 40px;
     -webkit-animation: PleaseWaitDivSpin 2s linear infinite;
