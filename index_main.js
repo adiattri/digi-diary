@@ -6,9 +6,7 @@ function saveCentralStorage() {
     localStorage.setItem("MyCentralStorage", JSON.stringify(CentralStorage));
 }
 
-if (localStorage.getItem("MyCentralStorage") === null) {
-    saveCentralStorage();
-} else {
+if (localStorage.getItem("MyCentralStorage") !== null) {
     CentralStorage = JSON.parse(localStorage.getItem("MyCentralStorage"));
 }
 
@@ -41,7 +39,7 @@ function hideOrShowElements(state) {
     allSelectedElementsVisibleState[state].forEach(function (elem) {
         S(elem).style.display = allSelectedElementsDefaultDisplayValues[elem];
     });
-    
+
 }
 hideOrShowElements("SetPassword");
 
