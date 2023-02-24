@@ -12,32 +12,37 @@ if (localStorage.getItem("MyCentralStorage") === null) {
     CentralStorage = JSON.parse(localStorage.getItem("MyCentralStorage"));
 }
 
+
+var allSelectedElements = [
+    'DiaryLoginDiv',
+    'DiaryPasswordInput',
+    'DiarySetPasswordInput',
+    'DiarySetPasswordButton'
+];
+
+var allSelectedElementsDefaultDisplayValues = {};
+
+allSelectedElements.forEach(function (elem) {
+    allSelectedElementsDefaultDisplayValues[elem] = window.getComputedStyle(S(elem), null).getPropertyValue('display');
+});
+
 function S(id) { return document.getElementById(id); }
 
-
 function hideOrShowElements(state) {
-    var allSelectedElements = {
-        'DiaryLoginDiv': 'block',
-        'DiaryPasswordInput': 'block',
-        'DiarySetPasswordInput': 'block',
-        'DiarySetPasswordButton': 'block'
-    };
-
-
-    for (var elem in allSelectedElements) {
+    allSelectedElements.forEach(function (elem) {
         S(elem).style.display = 'none';
-    }
+    });
 
     var allSelectedElementsVisibleState = {
         'SetPassword': ['DiaryLoginDiv', 'DiarySetPasswordInput', 'DiarySetPasswordButton'],
-        'UnlockDiary' : ['DiaryLoginDiv', 'DiaryPasswordInput']
+        'UnlockDiary': ['DiaryLoginDiv', 'DiaryPasswordInput']
     };
 
     allSelectedElementsVisibleState[state].forEach(function (elem) {
-        S(elem).style.display = allSelectedElements[elem];
+        S(elem).style.display = allSelectedElementsDefaultDisplayValues[elem];
     });
+    
 }
-
-hideOrShowElements("UnlockDiary");
+hideOrShowElements("SetPassword");
 
 
