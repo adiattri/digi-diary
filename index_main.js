@@ -25,7 +25,7 @@ allSelectedElements.forEach(function (elem) {
 });
 
 function S(id) { return document.getElementById(id); }
-
+//kartik hello
 function hideOrShowElements(state) {
     allSelectedElements.forEach(function (elem) {
         S(elem).style.display = 'none';
