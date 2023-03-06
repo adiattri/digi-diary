@@ -26,6 +26,7 @@ allSelectedElements.forEach(function (elem) {
 
 function S(id) { return document.getElementById(id); }
 //kartik hello
+//hy
 //adii helloo
 function hideOrShowElements(state) {
     allSelectedElements.forEach(function (elem) {
