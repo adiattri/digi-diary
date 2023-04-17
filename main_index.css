@@ -1,5 +1,6 @@
 body {
     background-color: #080710;
+    /* background-color: #000000; */
     font-family: 'Poppins',sans-serif;
 }
 
@@ -35,6 +36,7 @@ input {
     color: rgb(0, 145, 255);
 }
 #top_bar_options > button {
+    font-family: 'Poppins',sans-serif;
     border: none;
     padding: 15px 32px;
     text-align: center;
@@ -43,7 +45,7 @@ input {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    color: white;
+    color: orange;
     background-color: #080710 ;
 }
 #sign_up_container,
@@ -69,6 +71,7 @@ input {
 #sign_in_container > input {
     font-size: 16px;
     font-weight: 300;
+    font-family: 'Poppins',sans-serif;
     color: #ffffff;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -90,16 +93,17 @@ input {
 #sign_in_container > button{
     font-size: 18px;
     font-weight: 600;
+    font-family: 'Poppins',sans-serif;
     width: 100%;
     background-color: #ffffff;
     margin: 8px 0px 8px 0px;
     padding: 15px;
     border-style: solid;
-    border-width: 1px;
-    border-color: #000000;
+    border-width: 1.5px;
+    border-color: rgb(0, 145, 255);
     cursor: pointer;
     outline: none;
-    border-radius: 5px;
+    border-radius: 8px;
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -115,6 +119,7 @@ input {
     margin: 8px 0px 8px 0px;
     padding: 6px;
     color: rgb(0, 145, 255);
+    /* color: #C3070F; */
 }
 
 #search_input {
@@ -123,8 +128,11 @@ input {
     margin: 30px auto;
     box-sizing: border-box;
     padding: 10px;
+
+    font-family: 'Poppins',sans-serif;
     font-size: 20px;
     border-radius: 4px;
+    color: whitesmoke;
 }
 
 #notes_container,
@@ -163,7 +171,7 @@ input {
     padding: 15px 32px;
     margin: 4px 2px;
     border: 1px solid #000000;
-    background-color: rgba(255,255,255,0.07);
+    background-color: rgba(255, 255, 255, 0.143);
     color: white;
     border-radius: 4px;
 }
@@ -190,6 +198,7 @@ input {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-family: 'Poppins',sans-serif;
     margin: 4px 2px;
     cursor: pointer;
     color: white;
@@ -197,5 +206,5 @@ input {
 }
 
 span{
-    color: #ffffff;
+    color: orange;
 }
