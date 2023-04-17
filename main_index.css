@@ -1,15 +1,15 @@
 body {
-    background-color: #f0f0f0;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #080710;
+    font-family: 'Poppins',sans-serif;
 }
 
 button {
     cursor: pointer;
-    background-color: transparent;
+    background-color: whitesmoke;
 }
 
 input {
-    background-color: transparent;
+    background-color: rgba(255,255,255,0.07);
 }
 
 #top_bar {
@@ -22,7 +22,7 @@ input {
 
 
 #top_bar > div>h1{
-    color: #008080;
+    color: rgb(0, 145, 255);
 }
 
 
@@ -31,8 +31,8 @@ input {
     flex-direction: row;
 }
 
-#top_bar_options > button:nth-child(1) {
-    color: #008080;
+#top_bar_options #deleted_notes_option> button:nth-child(1) {
+    color: rgb(0, 145, 255);
 }
 #top_bar_options > button {
     border: none;
@@ -43,40 +43,57 @@ input {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    color: white;
+    background-color: #080710 ;
 }
 #sign_up_container,
 #sign_in_container {
-    border: 1px solid #ffffff;
+    border: 2px solid rgba(255,255,255,0.1) ;
     margin: 100px auto;
-    padding: 0px 8px 0px 8px;
-    width: 300px;
+    /* padding: 0px 8px 0px 8px; */
+    width: 350px;
+    height: 420px;
     border-style: solid;
     border-width: 1px;
-    border-color: #000000;
-    border-radius: 5px;
+    /* border-color: #ffffff; */
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.13);
+    top: 50%;
+    left: 50%;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
 }
 
 #sign_up_container > input,
 #sign_in_container > input {
     font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     width: 100%;
-    margin: 8px 0px 8px 0px;
-    padding: 6px;
+    margin: 20px 0px 8px 0px;
+    padding: 0 10px;
     border-style: solid;
     border-width: 0px 0px 1px 0px;
-    border-color: #000000;
+    border-color: #ffffff;
     outline: none;
+    /* text-shadow: 0.5px 0.5px 1px #ffffff; */
+    display: block;
+    height: 50px;
+    border-radius: 3px;
 }
 
 #sign_up_container > button,
 #sign_in_container > button{
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 600;
     width: 100%;
+    background-color: #ffffff;
     margin: 8px 0px 8px 0px;
-    padding: 6px;
+    padding: 15px;
     border-style: solid;
     border-width: 1px;
     border-color: #000000;
@@ -97,13 +114,13 @@ input {
     text-align: center;
     margin: 8px 0px 8px 0px;
     padding: 6px;
-    color: #008080;
+    color: rgb(0, 145, 255);
 }
 
 #search_input {
     display: block;
     width: 50%;
-    margin: 10px auto;
+    margin: 30px auto;
     box-sizing: border-box;
     padding: 10px;
     font-size: 20px;
@@ -120,10 +137,13 @@ input {
 
 #notes_container > div,
 #deleted_notes_container > div{
-    border: 1px solid;
+    border: 1px solid rgba(255,255,255,0.13);
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
+    background-color: rgba(255,255,255,0.13);
+    color: white;
+    /* border-color: #D83F87; */
 }
 
 #note_editor,
@@ -133,6 +153,7 @@ input {
     margin: 10px auto;
     box-sizing: border-box;
     padding: 10px;
+    color: white;
     border: 1px solid #000000;
     border-radius: 4px;
 }
@@ -142,6 +163,8 @@ input {
     padding: 15px 32px;
     margin: 4px 2px;
     border: 1px solid #000000;
+    background-color: rgba(255,255,255,0.07);
+    color: white;
     border-radius: 4px;
 }
 #note_editor_options,
@@ -169,4 +192,10 @@ input {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    color: white;
+    background-color: transparent;
+}
+
+span{
+    color: #ffffff;
 }
