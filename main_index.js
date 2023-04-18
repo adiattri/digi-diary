@@ -81,11 +81,14 @@ function updateDeletedNotes(notes){
 }
 var currentlyEditingNote;
 var currentlyManagingDeletedNote;
-
+function delete_note(){
+    return true;
+}
 function manageNote(i) {
     setState('editing_note');
     currentlyEditingNote = i;
     S('note_editor_note').innerText = usersData[CentralStorage.currentUser].notes[i];
+    
 }
 
 function manageDeletedNote(i) {
@@ -228,4 +231,7 @@ window.addEventListener("load", function() {
         updateDeletedNotes(CentralStorage.usersData[CentralStorage.currentUser].deletedNotes.filter(function(t){ return t.includes(S('search_input').value); }));
     });
 });
+function check_entry(){
+    return true;
+}
 
